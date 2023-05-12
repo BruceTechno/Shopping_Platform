@@ -22,10 +22,10 @@ CREATE TABLE IF NOT EXISTS `order` (
   `order_number` INT NOT NULL,
   `account` VARCHAR(45) NULL,
   `orderInfo` VARCHAR(200) NULL,
-  `ordercol` VARCHAR(45) NULL,
   `pay_way` INT NULL,
   `delivery_way` INT NULL,
   PRIMARY KEY (`order_number`));
+
 
 
 CREATE TABLE IF NOT EXISTS `shopping_car` (
