@@ -6,11 +6,20 @@ public class RegisterRequest {
     private String name;
     private String address;
     private String phone;
+    private  int identityNumber;
 //==============================================================================================================
 
     public RegisterRequest() {
     }
 //==============================================================================================================
+
+    public int getIdentityNumber() {
+        return identityNumber;
+    }
+
+    public void setIdentityNumber(int identityNumber) {
+        this.identityNumber = identityNumber;
+    }
 
     public String getAccount() {
         return account;

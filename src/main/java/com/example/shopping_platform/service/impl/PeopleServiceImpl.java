@@ -26,6 +26,11 @@ public class PeopleServiceImpl implements PeopleService {
         String name = request.getName();
         String address = request.getAddress();
         String phone = request.getPhone();
+        int identityNum = request.getIdentityNumber();
+
+        if (identityNum != 1 || identityNum != 2){
+            return new RegisterResponse();//coj4m06會員資料錯誤
+        }
         String patternAccount = "^[^\\s]{3,8}$";
         String patternPwd = "^(?=.+[\\p{Punct}])(?!.*[\\s\\t\\r\\n\\f])[\\p{Print}]{8,12}$";
         //todo phone正規表達式
