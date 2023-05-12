@@ -21,10 +21,10 @@ CREATE TABLE IF NOT EXISTS `people` (
 CREATE TABLE IF NOT EXISTS `order` (
   `order_number` INT NOT NULL,
   `account` VARCHAR(45) NULL,
-  `commodity_number` INT NULL DEFAULT 0,
-  `quantity` INT NULL DEFAULT 0,
-  `pay_way` INT NULL DEFAULT 0,
-  `delivery_way` INT NULL DEFAULT 0,
+  `orderInfo` VARCHAR(200) NULL,
+  `ordercol` VARCHAR(45) NULL,
+  `pay_way` INT NULL,
+  `delivery_way` INT NULL,
   PRIMARY KEY (`order_number`));
 
 
